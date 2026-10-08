@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="Walid Hamouda — Data Engineer portfolio">
+<title>Walid Hamouda | Data Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050505;--text:#f4f4f4;--muted:#aaa;--red:#ff3b30;--gold:#ffbd4a;--line:#292929;--mono:"Share Tech Mono","Space Mono",Consolas,monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--mono);line-height:1.7;letter-spacing:.01em}a{color:var(--gold);text-decoration:none}a:hover{color:#fff}
+.layout{display:grid;grid-template-columns:1fr 1fr;align-items:start}.content{min-width:0;padding:34px clamp(22px,4.5vw,68px) 48px;background:#050505}
+.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;padding:46px 0 54px}.eyebrow{color:var(--red);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase}
+h1{margin:14px 0 4px;font-size:clamp(2.7rem,5vw,5rem);line-height:.98;letter-spacing:-.07em}h1 span{color:var(--gold)}.role{font-size:clamp(1rem,1.8vw,1.3rem);color:#ddd;margin:18px 0}.intro{max-width:570px;color:var(--muted);font-size:.92rem}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.button{display:inline-block;border:1px solid var(--red);padding:9px 14px;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}.button.primary{background:var(--red);color:#fff}.button:hover{border-color:var(--gold);color:var(--gold);background:transparent}
+nav{display:flex;flex-wrap:wrap;gap:8px 15px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 0;font-size:.72rem;text-transform:uppercase}nav a{color:#ccc}
+section{padding:38px 0 8px;border-bottom:1px solid var(--line)}h2{margin:0 0 16px;color:var(--gold);font-size:1.18rem;letter-spacing:.08em;text-transform:uppercase}h2:before{content:"// ";color:var(--red)}h3{margin:18px 0 5px;font-size:.98rem;color:#fff}p{margin:8px 0 13px;color:#c5c5c5;font-size:.86rem}.small{font-size:.75rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 18px}.chip{border:1px solid #343434;padding:3px 8px;color:#ddd;font-size:.72rem}.item{padding:0 0 16px 15px;margin:18px 0;border-left:2px solid #333}.item h3{margin-top:0}.meta{color:var(--red);font-size:.72rem}ul{padding-left:19px;color:#c5c5c5;font-size:.83rem}li{margin:5px 0}
+.contact-card{border:1px solid #343434;padding:17px;background:linear-gradient(135deg,#101010,#080808)}.contact-row{overflow-wrap:anywhere;margin:10px 0;font-size:.8rem}.contact-row b{color:var(--red);display:inline-block;min-width:88px}
+.image-panel{position:sticky;top:0;height:100vh;min-height:600px;overflow:hidden;background:#080808}.image-panel img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:saturate(.88) contrast(1.06)}.image-panel:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(5,5,5,.16),transparent 30%),linear-gradient(0deg,rgba(5,5,5,.72),transparent 38%)}
+.image-caption{position:absolute;z-index:1;left:27px;right:27px;bottom:26px}.tag{display:inline-block;padding:5px 9px;color:#fff;background:var(--red);font-size:.7rem;letter-spacing:.12em}.image-caption p{color:#eee;max-width:380px;text-shadow:0 2px 8px #000}.footer{color:#666;font-size:.7rem;padding-top:22px}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.image-panel{position:relative;order:-1;height:52vh;min-height:340px}.content{padding:24px 22px 38px}.hero{min-height:auto;padding:44px 0}h1{font-size:clamp(2.7rem,13vw,4.6rem)}}
+
+/* Code-editor-inspired palette, slightly larger text, and stronger headings */
+:root{--bg:#050505;--text:#d4d4d4;--muted:#a8b0bb;--red:#f44747;--green:#6a9955;--blue:#569cd6;--gold:#dcdcaa;--line:#292929;--mono:"Share Tech Mono","Space Mono",Consolas,monospace}
+body{font-size:17px;color:var(--text)}
+p{font-size:.96rem;line-height:1.8}
+ul{font-size:.94rem;line-height:1.8}
+h1{font-weight:700}
+h1 span{color:var(--blue)}
+h2{font-size:1.42rem;font-weight:700;color:var(--red)}
+h3{font-size:1.12rem;font-weight:700;color:var(--green)}
+.eyebrow,.meta{color:var(--red);font-weight:700}
+.role{color:var(--blue);font-size:clamp(1.08rem,1.9vw,1.4rem)}
+.intro{font-size:1.02rem}
+nav a,a{color:var(--blue)}
+strong,.contact-row b{color:var(--green)}
+.chip{font-size:.8rem}
+.button{font-size:.84rem;font-weight:700}
+.image-panel img{object-fit:cover;object-position:center center}
+@media(max-width:800px){body{font-size:16px}h2{font-size:1.32rem}h3{font-size:1.08rem}p{font-size:.95rem}}
+
+
+.matrix-panel{position:sticky;top:0;height:100vh;min-height:600px;overflow:hidden;background:#000;border-left:1px solid #073d18}
+#matrixCanvas{position:absolute;inset:0;width:100%;height:100%;display:block;background:#000}
+.matrix-panel:before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(0,0,0,.72),transparent 20%,transparent 82%,rgba(0,0,0,.18)),linear-gradient(0deg,rgba(0,0,0,.55),transparent 38%,rgba(0,0,0,.12))}
+.matrix-overlay{position:absolute;z-index:2;left:28px;bottom:30px;color:#00ff41;text-shadow:0 0 8px rgba(0,255,65,.8);font-family:var(--mono)}
+.matrix-label{font-size:1rem;font-weight:700;letter-spacing:.12em}.matrix-sub{margin-top:8px;color:#39ff6a;font-size:.7rem;line-height:1.7;opacity:.75}
+@media(max-width:800px){.matrix-panel{position:relative;order:-1;height:48vh;min-height:320px;border-left:0;border-bottom:1px solid #073d18}}
+
+</style></head><body><main class="layout"><div class="content">
+<header class="hero" id="top"><div class="eyebrow">Portfolio / 2026</div><h1>WALID<br><span>HAMOUDA</span></h1><div class="role">Data Engineer · Business Data · Cloud</div>
+<p class="intro">I combine business and accounting experience with developing skills in SQL, Python, and Microsoft Azure to help turn raw data into reliable, useful information.</p>
+<div class="chips"><span class="chip">SQL</span><span class="chip">PYTHON</span><span class="chip">POSTGRESQL</span><span class="chip">AZURE</span><span class="chip">PANDAS</span></div>
+<div class="actions"><a class="button primary" href="#projects">Explore Projects</a><a class="button" href="#contact">Contact Me</a></div></header>
+<nav aria-label="Portfolio navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+<section id="about"><h2>About Me</h2><p>I am transitioning from accounting into data engineering, bringing professional experience with business processes, financial data, reporting, and enterprise systems. I am currently training in the Microsoft Data Engineer track at DEPI and developing practical skills in SQL, Python, databases, and Microsoft Azure.</p><p>My background has taught me the importance of accuracy, validation, and understanding what a business actually needs from its data. I am applying that perspective as I build my technical skills and project portfolio.</p></section>
+<section id="skills"><h2>Technical Toolkit</h2><h3>Programming & Data</h3><div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Data Cleaning</span><span class="chip">Data Transformation</span></div><h3>Databases & Cloud</h3><div class="chips"><span class="chip">PostgreSQL</span><span class="chip">Azure SQL</span><span class="chip">Azure Fundamentals</span><span class="chip">Azure Data Factory Concepts</span><span class="chip">ETL / ELT Concepts</span></div><h3>Business Systems</h3><div class="chips"><span class="chip">Oracle EBS</span><span class="chip">Infinity ERP</span><span class="chip">Double Click</span><span class="chip">Financial Reporting</span><span class="chip">Data Quality</span></div><p class="small">Skills reflect current training and developing practical experience.</p></section>
+<section id="experience"><h2>Experience & Education</h2><div class="item"><div class="meta">2011 — PRESENT</div><h3>Accountant · Real Estate Sector</h3><p>Worked with general ledger, accounts payable and receivable, journal entries, VAT, withholding tax, payroll tax, social insurance, trial balances, and ERP-based accounting workflows.</p><p><strong>Relevant achievement:</strong> Prepared a supplier report for a tax investigation covering 2016–2021, including supplier information, work amounts, and withholding tax. The report was reviewed and approved by auditors.</p></div><div class="item"><div class="meta">CURRENT TRAINING</div><h3>Microsoft Data Engineer Track · DEPI</h3><p>Building foundations in data engineering, SQL, Python, databases, data processing, and Microsoft Azure.</p></div><div class="item"><div class="meta">2023</div><h3>Professional Diploma in Software Engineering</h3><p>Faculty of Graduate Studies and Statistics.</p></div><div class="item"><div class="meta">2010</div><h3>Bachelor of Commerce</h3><p>Faculty of Commerce · Arabic Section.</p></div></section>
+<section id="services"><h2>What I Can Help With</h2><div class="item"><h3>Data Cleaning & Transformation</h3><p>Prepare structured datasets for analysis by cleaning, organizing, and transforming data.</p></div><div class="item"><h3>SQL & Database Tasks</h3><p>Query relational data, join tables, filter records, aggregate results, and organize data for downstream use.</p></div><div class="item"><h3>Python Data Processing</h3><p>Use Python and Pandas for repeatable data preparation and transformation tasks.</p></div><div class="item"><h3>Reporting & KPI Preparation</h3><p>Shape datasets and metrics for business reporting, with a focus on clear definitions and data quality.</p></div><p class="small">Project scope is agreed according to requirements and current capabilities.</p></section>
+<section id="projects"><h2>Selected Projects</h2><div class="item"><div class="meta">TRAINING / REPORTING</div><h3>Sales Data & KPI Reporting</h3><p>Training project concept: prepare sales data for business reporting and identify useful performance indicators.</p><ul><li>Clean and transform raw sales data.</li><li>Use SQL and Python to organize the dataset.</li><li>Define KPIs with clear calculations and business meaning.</li><li>Prepare reporting-ready tables and summaries.</li></ul><div class="chips"><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">KPIs</span></div></div>
+<div class="item"><div class="meta">DATABASE PRACTICE</div><h3>PostgreSQL · Pagila Sample Database</h3><p>Practice with a relational sample database and explore relationships across tables.</p><ul><li>Query and filter records.</li><li>Practice joins, grouping, and aggregation.</li><li>Explore relational structures using DBeaver and PostgreSQL.</li></ul><div class="chips"><span class="chip">PostgreSQL</span><span class="chip">SQL</span><span class="chip">DBeaver</span></div></div>
+<div class="item"><div class="meta">PYTHON / DATA PREPARATION</div><h3>Titanic Dataset · Pandas Practice</h3><p>Practice data cleaning and transformation using a structured CSV dataset.</p><ul><li>Handle missing values and calculate summary statistics.</li><li>Group data and create pivot tables.</li><li>Join and concatenate datasets.</li><li>Manipulate columns and date information.</li></ul><div class="chips"><span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">CSV</span></div></div><p class="small">Add final outputs, screenshots, repository links, and results as each project is completed.</p></section>
+<section id="usp"><h2>My Approach</h2><p><strong>I help businesses organize and transform their data into actionable insights through SQL, Python, and Azure data engineering solutions.</strong></p><p>My differentiator is the combination of business-process knowledge, financial data experience, and technical training. I value accuracy, validation, and solutions that answer a real business question.</p></section>
+<section id="contact"><h2>Let’s Connect</h2><div class="contact-card"><p>If you have a data cleaning, SQL, Python, or reporting task, get in touch to discuss the requirements.</p><div class="contact-row"><b>PHONE</b><a href="tel:+201152934044">+20 115 293 4044</a></div><div class="contact-row"><b>LINKEDIN</b><a href="https://www.linkedin.com/in/waleed-hamouda-abd-elfattah" target="_blank" rel="noopener noreferrer">linkedin.com/in/waleed-hamouda-abd-elfattah</a></div><div class="contact-row"><b>EMAIL</b><span>waleed.hamouda@yahoo.com</span></div><div class="contact-row"><b>LOCATION</b>Egypt · Open to remote opportunities</div></div></section>
+<footer class="footer">© 2026 Walid Hamouda · Data Engineer Portfolio</footer>
+</div><aside class="matrix-panel" aria-label="Binary data background">
+<canvas id="matrixCanvas"></canvas>
+<div class="matrix-overlay"><div class="matrix-label">&gt; DATA_STREAM</div>
+<div class="matrix-sub">01001001 01001110 01000111<br>01000101 01001110 01000101 01000101 01010010</div></div>
+</aside></main>
+<script>
+(() => {
+const c=document.getElementById("matrixCanvas"); if(!c)return;
+const x=c.getContext("2d"), chars="01"; let cols=0,drops=[];
+function resize(){const r=c.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);c.width=r.width*d;c.height=r.height*d;x.setTransform(d,0,0,d,0,0);cols=Math.ceil(r.width/18);drops=Array.from({length:cols},()=>Math.random()*-80)}
+function draw(){const r=c.getBoundingClientRect();x.fillStyle="rgba(0,0,0,.075)";x.fillRect(0,0,r.width,r.height);x.font="18px 'Share Tech Mono',Consolas,monospace";for(let i=0;i<cols;i++){let y=drops[i]*18;x.fillStyle=Math.random()>.92?"#39ff6a":"#087f2b";x.shadowColor="#00ff41";x.shadowBlur=Math.random()>.92?8:0;x.fillText(chars[Math.random()>.5?0:1],i*18,y);if(y>r.height&&Math.random()>.975)drops[i]=Math.random()*-25;else drops[i]+=.65+Math.random()*.55}x.shadowBlur=0;requestAnimationFrame(draw)}
+resize();addEventListener("resize",resize);draw();
+})();
+</script>
+
+</body></html>
